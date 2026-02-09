@@ -1,0 +1,197 @@
+:root {
+    --azul-bebe: #c8ddf3;
+    --azul-claro: #eaf2fb;
+    --azul-medio: #8fb6e8;
+    --azul-destaque: #5f90e9;
+    --amarelo-destaque: #fcff60;
+    --amarelo-base:  #fdffa2;
+    --verde-base:  #b7fd9b;
+    --texto: #2f2f2f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, var(--azul-claro), var(--azul-bebe));
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px;
+    color: var(--texto);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: var(--azul-destaque);
+    margin-bottom: 25px;
+}
+
+.subtitulo {
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: var(--azul-medio);
+}
+
+.form-tarefa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.form-tarefa input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.form-tarefa button {
+    background: var(--azul-destaque);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-tarefa button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.lista-tarefas {
+    display: grid;
+    gap: 20px;
+}
+
+.card-base {
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;   
+    width: 90%;       
+    background-color: #eaf2fb;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.secao {
+    padding: 40px 0;  /* mantém espaçamento em cima/baixo, mas não afeta largura do card-base */
+}
+
+
+.card-tarefa {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    border-left: 6px solid var(--azul-destaque);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-tarefa:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-tarefa-andamento {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    border-left: 6px solid var(--amarelo-base);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-tarefa-andamento:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-tarefa-concluida {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    border-left: 6px solid var(--verde-base);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-tarefa-concluida:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.secao {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    margin-bottom: 60px;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.acoes button {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.btn-andamento {
+    background-color: #fff3c4;
+    color: #7a6a00;
+}
+
+.btn-andamento:hover {
+    background-color: #ffe58a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.btn-concluida {
+    background-color: #b5ffca;
+    color: #1b5e20;
+}
+
+.btn-concluida:hover {
+    background-color: #8df0aa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.btn-apagar {
+    background-color: #ffb3b3;
+    color: #7a0000;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-apagar:hover {
+    background-color: #ff8f8f;
+    transform: scale(1.05);
+}
+
+
+
